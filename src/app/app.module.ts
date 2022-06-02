@@ -19,6 +19,7 @@ import { PostCardComponent } from './layouts/post-card/post-card.component';
 import { SmallPostCardComponent } from './layouts/small-post-card/small-post-card.component';
 import { CarousselComponent } from './layouts/caroussel/caroussel.component';
 import { CarousselclsComponent } from './layouts/carousselcls/carousselcls.component';
+import { HeroSectionComponent } from './layouts/hero-section/hero-section.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { CarousselclsComponent } from './layouts/carousselcls/carousselcls.compo
     SmallPostCardComponent,
     CarousselComponent,
     CarousselclsComponent,
+    HeroSectionComponent,
   ],
   imports: [
     BrowserModule,
