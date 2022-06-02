@@ -16,6 +16,9 @@ import { CommentFormComponent } from './comments/comment-form/comment-form.compo
 import { CommentListComponent } from './comments/comment-list/comment-list.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { PostCardComponent } from './layouts/post-card/post-card.component';
+import { SmallPostCardComponent } from './layouts/small-post-card/small-post-card.component';
+import { CarousselComponent } from './layouts/caroussel/caroussel.component';
+import { CarousselclsComponent } from './layouts/carousselcls/carousselcls.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { PostCardComponent } from './layouts/post-card/post-card.component';
     CommentListComponent,
     AboutUsComponent,
     PostCardComponent,
+    SmallPostCardComponent,
+    CarousselComponent,
+    CarousselclsComponent,
   ],
   imports: [
     BrowserModule,
