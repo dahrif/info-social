@@ -2,6 +2,6 @@ header{
     height: 100px;
 }
 
-.site-logo{
-    font-size: 1.5em;
+.navbar-brand .logo{
+width: 70% !important;
 }

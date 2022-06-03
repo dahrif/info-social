@@ -21,7 +21,7 @@
 /*===========================
     1. COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap");
 html,
 body {
   height: 100%; }
@@ -34,7 +34,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Noto Kufi Arabic', sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #777777;
@@ -72,7 +72,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Noto Kufi Arabic', sans-serif;
   font-weight: 700;
   color: #000;
   margin: 0px 0 15px;
@@ -1922,7 +1922,7 @@ p {
       transform: translateY(-50%);
       height: 4px;
       width: 200px;
-      background: #F63A3A; }
+    }
       @media only screen and (min-width: 1200px) and (max-width: 1600px) {
         .binduz-er-featured-area .binduz-er-featured-title .binduz-er-title::before {
           width: 150px; } }
@@ -2009,10 +2009,10 @@ p {
   margin-top: 35px; }
   .binduz-er-sidebar-social .binduz-er-social-list .binduz-er-list a {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background: #fff;
     border-radius: 10px;
-    padding: 10px 30px 10px 10px;
+    padding: 10px 10px 10px 10px;
     align-items: center;
     margin-bottom: 8px; }
     .binduz-er-sidebar-social .binduz-er-social-list .binduz-er-list a span {
@@ -2031,10 +2031,10 @@ p {
         margin-right: 30px; }
         @media only screen and (min-width: 1200px) and (max-width: 1600px) {
           .binduz-er-sidebar-social .binduz-er-social-list .binduz-er-list a span i {
-            margin-right: 5px; } }
+            margin-right: 30px; } }
         @media only screen and (min-width: 992px) and (max-width: 1200px) {
           .binduz-er-sidebar-social .binduz-er-social-list .binduz-er-list a span i {
-            margin-right: 5px; } }
+            margin-right: 30px; } }
     .binduz-er-sidebar-social .binduz-er-social-list .binduz-er-list a:nth-child(2) span i {
       background: #55ACEE; }
     .binduz-er-sidebar-social .binduz-er-social-list .binduz-er-list a:nth-child(3) span i {
@@ -2044,7 +2044,7 @@ p {
     .binduz-er-sidebar-social .binduz-er-social-list .binduz-er-list a:hover {
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2); }
 .binduz-er-sidebar-social .binduz-er-sidebar-add {
-  background-image: url(../images/space-bg-1.png);
+  background-image: url(../images/info/pub.PNG);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;

@@ -20,6 +20,7 @@ import { SmallPostCardComponent } from './layouts/small-post-card/small-post-car
 import { CarousselComponent } from './layouts/caroussel/caroussel.component';
 import { CarousselclsComponent } from './layouts/carousselcls/carousselcls.component';
 import { HeroSectionComponent } from './layouts/hero-section/hero-section.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -41,9 +42,11 @@ import { HeroSectionComponent } from './layouts/hero-section/hero-section.compon
     CarousselComponent,
     CarousselclsComponent,
     HeroSectionComponent,
+  
   ],
   imports: [
     BrowserModule,
+    FontAwesomeModule,
     AppRoutingModule
   ],
   providers: [],

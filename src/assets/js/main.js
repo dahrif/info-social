@@ -97,8 +97,8 @@
             autoplay: true,
             autoplaySpeed: 3000,
             arrows: true,
-            prevArrow: '<span class="prev"><i class="far fa-angle-left"></i></span>',
-            nextArrow: '<span class="next"><i class="far fa-angle-right"></i></span>',
+            prevArrow: '<span class="prev"><i class="fa-solid fa-chevron-left"></i></span>',
+            nextArrow: '<span class="next"><i class="fa-solid fa-chevron-right"></i></span>',
             speed: 1500,
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -501,3 +501,18 @@
 
 
 })(jQuery);
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-link").forEach((link) =>
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+);
