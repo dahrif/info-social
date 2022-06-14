@@ -1,46 +1,23 @@
-import { ListePage } from './annonces/liste/liste.page';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { TermsAndConditionComponent } from './pages/terms-and-condition/terms-and-condition.component';
+import { SinglePostComponent } from './pages/single-post/single-post.component';
+import { SingleCategoryComponent } from './pages/single-category/single-category.component';
+import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './auth/login/login.component';
-import { AuthGuard } from './services/auth.guard';
-import { AddAnnoncePage } from './annonces/add-annonce/add-annonce.page';
-
+import { RouterModule, Routes } from '@angular/router';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
-    
-
-  },
-  {path: 'login', component: LoginComponent},
-
-  {
-    path: 'add-annonce',
-    component: AddAnnoncePage
-  },
-  {
-    path: 'annonces',
-    component: ListePage
-  },
-  {
-    path: 'liste',
-    loadChildren: () => import('./annonces/liste/liste.module').then( m => m.ListePageModule)
-  },
-
-
-
+  {path : '', component: HomeComponent},
+  {path : 'category/:category/:id', component: SingleCategoryComponent},
+  {path : 'post/:id', component : SinglePostComponent},
+  {path : 'about', component : AboutUsComponent},
+  {path : 'term-conditions', component : TermsAndConditionComponent},
+  {path : 'contact', component: ContactUsComponent}
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
